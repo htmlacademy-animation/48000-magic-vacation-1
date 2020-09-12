@@ -95,11 +95,8 @@
   to {transform: translateX(0); opacity: 1}
 }
 
-.swiper-slide-active {
+.swiper-slide-active, .swiper-slide-next {
   .slider__item-text {animation: slider-text .2s ease-in .3s forwards;}
-}
-.swiper-slide-next {
-  .slider__item-text {animation: slider-text .2s ease-in .5s forwards;}
 }
 
 .slider__item-text {
