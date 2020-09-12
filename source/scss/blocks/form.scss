@@ -90,7 +90,7 @@
 .form__button {
   width: 190px;
   position: absolute;
-  topp: 0; right: 0;
+  top: -32px; right: 0;
 
   @media (orientation: portrait) {
     position: relative;

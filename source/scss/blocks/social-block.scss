@@ -13,6 +13,15 @@
   }
 }
 
+@keyframes sb-bounce {
+  from {
+    transform: scale(0.4);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
 .social-block__toggler {
   @include btn-reset;
   position: relative;
@@ -21,6 +30,7 @@
   height: 4rem;
   color: $c-dark;
   border-radius: 50%;
+  transform: scale(0.4);
 
   @media (max-width: $tablet) and (orientation: portrait) {
     display: none;

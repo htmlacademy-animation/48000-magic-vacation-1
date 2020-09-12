@@ -26,6 +26,11 @@
   justify-content: space-between;
 }
 
+@keyframes ph-logo-show {
+  from {opacity: 0; transform: translateX(-50px)}
+  to {opacity: 1; transform: translateX(0)}
+}
+
 .page-header__logo {
   @include hover;
   position: relative;
@@ -35,6 +40,8 @@
   padding: 1rem 0;
   width: 10rem;
   color: $c-light;
+  opacity: 0; transform: translateX(-50%);
+  transition: all .3s linear;
 
   @media (min-width: $stop-scaling) {
     top: -5px;
@@ -127,9 +134,15 @@
   }
 }
 
+@keyframes ph-nav-show {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
 .page-header__nav {
   display: flex;
   align-items: center;
+  opacity: 0;
 
   @media (max-width: $tablet) and (orientation: portrait) {
     position: fixed;

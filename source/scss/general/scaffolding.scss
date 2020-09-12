@@ -45,6 +45,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  &.loaded {
+    .page-header__logo {animation: ph-logo-show .5s cubic-bezier(.02,.86,0,1) .3s forwards;}
+    .page-header__nav {animation: ph-nav-show .5s cubic-bezier(.02,.86,0,1) .6s forwards;}
+    .social-block__toggler {animation: sb-bounce .5s cubic-bezier(.81,1,.17,2.13) .7s forwards;}
+    .screen__footer {animation: footer-show .5s cubic-bezier(.02,.86,0,1) .9s forwards;}
+  }
+
   @media (min-width: $stop-scaling) {
     font-size: 18px;
   }
